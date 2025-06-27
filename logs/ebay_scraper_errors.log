@@ -1,0 +1,2 @@
+2025-06-27 02:19:14,144 - ebay_jewelry_error_handler - ERROR - handle_error:298 - Error in error handler: 'dict' object has no attribute 'timestamp'
+2025-06-27 02:19:14,145 - ebay_jewelry_error_handler - INFO - reset_statistics:755 - Error statistics reset

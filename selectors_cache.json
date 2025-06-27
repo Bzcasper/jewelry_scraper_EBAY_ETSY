@@ -1,0 +1,759 @@
+{
+  "last_updated": "2025-06-27T07:39:09.523259",
+  "selector_stats": {},
+  "selectors": {
+    "search_results": {
+      "listing_container": {
+        "primary": "div.s-item",
+        "fallbacks": [
+          "div[data-view=\"mi:1686|iid:1\"]",
+          ".srp-results .s-item",
+          "div.s-item__wrapper",
+          "li.s-item"
+        ],
+        "description": "Main listing container in search results",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 1,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "listing_title": {
+        "primary": "h3.s-item__title",
+        "fallbacks": [
+          ".s-item__title span[role=\"heading\"]",
+          ".s-item__title a",
+          ".s-item__title",
+          "h3.it-ttl a",
+          ".lvtitle a"
+        ],
+        "description": "Product title in search results",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 1,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "listing_price": {
+        "primary": "span.s-item__price",
+        "fallbacks": [
+          ".s-item__detail .s-item__price",
+          ".notranslate",
+          ".u-flL.condText+ .u-flL",
+          ".amt.notranslate",
+          ".u-flL .notranslate"
+        ],
+        "description": "Product price in search results",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 1,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "listing_url": {
+        "primary": "h3.s-item__title a",
+        "fallbacks": [
+          ".s-item__link",
+          ".s-item__title a",
+          "a.s-item__link",
+          ".vip a"
+        ],
+        "description": "Product URL link in search results",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 1,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "listing_image": {
+        "primary": ".s-item__image img",
+        "fallbacks": [
+          ".s-item__wrapper img",
+          "img.s-item__image",
+          ".img img",
+          ".s-item img"
+        ],
+        "description": "Product thumbnail image in search results",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 2,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "listing_condition": {
+        "primary": ".s-item__subtitle .SECONDARY_INFO",
+        "fallbacks": [
+          ".s-item__condition-text",
+          ".s-item__condition",
+          ".condText",
+          ".s-item__subtitle"
+        ],
+        "description": "Product condition in search results",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 3,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "listing_shipping": {
+        "primary": ".s-item__shipping",
+        "fallbacks": [
+          ".s-item__logisticsCost",
+          ".s-item__detail .s-item__shipping",
+          ".s-item__freeXDays"
+        ],
+        "description": "Shipping information in search results",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 3,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      }
+    },
+    "product_details": {
+      "title": {
+        "primary": "h1#it-ttl",
+        "fallbacks": [
+          "h1.x-item-title-label",
+          "#ebayui-ellipsis-2",
+          ".x-item-title-label",
+          "h1.notranslate"
+        ],
+        "description": "Main product title on listing page",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 1,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "current_price": {
+        "primary": ".u-flL.condText+ .u-flL .notranslate",
+        "fallbacks": [
+          "#prcIsum .notranslate",
+          ".u-flL .notranslate",
+          ".amt.notranslate",
+          "#mm-saleDscPrc",
+          ".cc-ts-BOLD"
+        ],
+        "description": "Current price on product page",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 1,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "original_price": {
+        "primary": ".u-flL.condText .notranslate",
+        "fallbacks": [
+          ".originalRetailPrice .notranslate",
+          ".wasPrice .notranslate",
+          "#orgPrc .notranslate"
+        ],
+        "description": "Original/was price if item is on sale",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 2,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "condition": {
+        "primary": "#u-flL.condText",
+        "fallbacks": [
+          ".u-flL.condText",
+          ".condText",
+          "#vi-acc-del-range .u-flL"
+        ],
+        "description": "Product condition on listing page",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 2,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "item_specifics": {
+        "primary": ".itemAttr",
+        "fallbacks": [
+          ".viTabs.viTab.viTAbDiv.viTabs-selected .itemAttr",
+          "#viTabs_0_is .itemAttr",
+          "div.section .itemAttr"
+        ],
+        "description": "Item specifics/details section",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 2,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "description_iframe": {
+        "primary": "#desc_ifr",
+        "fallbacks": [
+          "iframe#desc_ifr",
+          ".d2-display iframe",
+          "#viTabs_0_pd iframe"
+        ],
+        "description": "Description iframe container",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 3,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "watch_button": {
+        "primary": "#vi-acc-del-range .watchlink",
+        "fallbacks": [
+          ".watchlink",
+          "#vi-acc-del-range a[href*=\"watchitem\"]"
+        ],
+        "description": "Watch/follow this item button",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 4,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      }
+    },
+    "jewelry_specific": {
+      "metal_type": {
+        "primary": "td:contains(\"Metal\") + td",
+        "fallbacks": [
+          "td:contains(\"Metal Type\") + td",
+          "td:contains(\"Base Metal\") + td",
+          "div:contains(\"Metal:\") .attrValue",
+          "[data-testid=\"ux-labels-values\"] span:contains(\"Metal\") + span"
+        ],
+        "description": "Jewelry metal type (gold, silver, etc.)",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 2,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "stone_type": {
+        "primary": "td:contains(\"Main Stone\") + td",
+        "fallbacks": [
+          "td:contains(\"Stone\") + td",
+          "td:contains(\"Gemstone\") + td",
+          "div:contains(\"Stone:\") .attrValue",
+          "td:contains(\"Center Stone\") + td"
+        ],
+        "description": "Main stone/gemstone type",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 2,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "ring_size": {
+        "primary": "td:contains(\"Ring Size\") + td",
+        "fallbacks": [
+          "td:contains(\"Size\") + td",
+          "div:contains(\"Size:\") .attrValue",
+          "select[name=\"msku\"] option[selected]",
+          ".u-flL.vi-sMSku-gen select option[selected]"
+        ],
+        "description": "Ring size for ring jewelry",
+        "device_type": "all",
+        "category_specific": "rings",
+        "performance_weight": 2,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "chain_length": {
+        "primary": "td:contains(\"Length\") + td",
+        "fallbacks": [
+          "td:contains(\"Chain Length\") + td",
+          "div:contains(\"Length:\") .attrValue",
+          "td:contains(\"Necklace Length\") + td"
+        ],
+        "description": "Chain length for necklaces and bracelets",
+        "device_type": "all",
+        "category_specific": "necklaces",
+        "performance_weight": 2,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "brand": {
+        "primary": "td:contains(\"Brand\") + td",
+        "fallbacks": [
+          "td:contains(\"Manufacturer\") + td",
+          "div:contains(\"Brand:\") .attrValue",
+          "h2.it-ttl span:first-child",
+          ".vi-acc-del-range .u-flL span"
+        ],
+        "description": "Jewelry brand/manufacturer",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 1,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "style": {
+        "primary": "td:contains(\"Style\") + td",
+        "fallbacks": [
+          "td:contains(\"Jewelry Style\") + td",
+          "div:contains(\"Style:\") .attrValue",
+          "td:contains(\"Type\") + td"
+        ],
+        "description": "Jewelry style/type",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 2,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "setting_type": {
+        "primary": "td:contains(\"Setting\") + td",
+        "fallbacks": [
+          "td:contains(\"Setting Type\") + td",
+          "td:contains(\"Stone Setting\") + td",
+          "div:contains(\"Setting:\") .attrValue"
+        ],
+        "description": "Stone setting type",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 3,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "carat_weight": {
+        "primary": "td:contains(\"Carat\") + td",
+        "fallbacks": [
+          "td:contains(\"Total Carat Weight\") + td",
+          "td:contains(\"Diamond Weight\") + td",
+          "div:contains(\"Carat:\") .attrValue"
+        ],
+        "description": "Stone carat weight",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 3,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "vintage": {
+        "primary": "td:contains(\"Age\") + td",
+        "fallbacks": [
+          "td:contains(\"Era\") + td",
+          "td:contains(\"Time Period\") + td",
+          "div:contains(\"Age:\") .attrValue"
+        ],
+        "description": "Vintage/antique age information",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 3,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      }
+    },
+    "images": {
+      "main_image": {
+        "primary": "#icImg",
+        "fallbacks": [
+          "#mainImgHldr img",
+          "#PicturePanel img",
+          ".img img",
+          ".zoom_trigger img"
+        ],
+        "description": "Main product image",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 1,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "gallery_thumbnails": {
+        "primary": ".tdThumb img",
+        "fallbacks": [
+          "#vi_main_img_fs .tdThumb img",
+          ".thumb img",
+          ".imgTbl img",
+          "#PicturePanel .thumbnail img"
+        ],
+        "description": "Gallery thumbnail images",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 2,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "zoom_image": {
+        "primary": "#zoom_trigger",
+        "fallbacks": [
+          ".zoom_trigger",
+          "#mainImgHldr .zoom",
+          ".enlarge"
+        ],
+        "description": "Zoom/enlarge image trigger",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 3,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "high_res_images": {
+        "primary": "script:contains(\"mainImgUrl\")",
+        "fallbacks": [
+          "script:contains(\"imageUrls\")",
+          "script:contains(\"originalImgUrl\")",
+          "link[rel=\"image_src\"]"
+        ],
+        "description": "High resolution image URLs from JavaScript",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 4,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "image_count": {
+        "primary": "#vi_main_img_fs .imgCnt",
+        "fallbacks": [
+          ".imgCnt",
+          "#PicturePanel .imgCnt",
+          ".zoom_pic_count"
+        ],
+        "description": "Total image count indicator",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 3,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      }
+    },
+    "shipping": {
+      "shipping_cost": {
+        "primary": "#fShippingCost .notranslate",
+        "fallbacks": [
+          ".vi-price .notranslate",
+          "#shipAddrAppr .vi-price .notranslate",
+          ".shipping .notranslate",
+          ".del-range .notranslate"
+        ],
+        "description": "Shipping cost amount",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 2,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "ships_from": {
+        "primary": "#shipAddrAppr .u-flL",
+        "fallbacks": [
+          ".del-range .u-flL",
+          "#vi-acc-del-range .u-flL",
+          ".shipsFromLocation"
+        ],
+        "description": "Item ships from location",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 2,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "delivery_estimate": {
+        "primary": ".vi-acc-del-range .vi-u-flR",
+        "fallbacks": [
+          ".del-range .vi-u-flR",
+          ".delivery-time",
+          ".estimated-delivery"
+        ],
+        "description": "Estimated delivery timeframe",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 2,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "international_shipping": {
+        "primary": "#internationalShipping",
+        "fallbacks": [
+          ".international-shipping",
+          "#shippingSection .international",
+          "div:contains(\"International shipping\")"
+        ],
+        "description": "International shipping availability",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 3,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "free_shipping": {
+        "primary": ".vi-acc-del-range .notranslate:contains(\"Free\")",
+        "fallbacks": [
+          ".free-shipping",
+          "span:contains(\"Free shipping\")",
+          ".del-range span:contains(\"Free\")"
+        ],
+        "description": "Free shipping indicator",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 2,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "returns_policy": {
+        "primary": "#returnPolicy",
+        "fallbacks": [
+          ".returns-policy",
+          "#vi-ret-accrd-txt",
+          "div:contains(\"Return policy\")"
+        ],
+        "description": "Returns policy information",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 3,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      }
+    },
+    "seller": {
+      "seller_name": {
+        "primary": ".mbg-nw",
+        "fallbacks": [
+          ".it-sel a",
+          ".seller-persona .seller-name",
+          "#RtdMbr a",
+          ".si-content a"
+        ],
+        "description": "Seller username/name",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 1,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "feedback_score": {
+        "primary": ".mbg-l a",
+        "fallbacks": [
+          ".seller-persona .feedback-score",
+          "#RtdMbr .mbg-l",
+          ".si-content .mbg-l"
+        ],
+        "description": "Seller feedback score",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 2,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "feedback_percentage": {
+        "primary": ".mbg-l + .mbg-l",
+        "fallbacks": [
+          ".feedback-percentage",
+          "#RtdMbr .positive-feedback",
+          ".si-content .positive-feedback"
+        ],
+        "description": "Seller positive feedback percentage",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 2,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "seller_location": {
+        "primary": ".u-flL.condText .vi-acc-loc",
+        "fallbacks": [
+          ".seller-location",
+          "#RtdMbr .loc",
+          ".si-content .loc",
+          ".mbg-loc"
+        ],
+        "description": "Seller geographic location",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 2,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "top_rated_badge": {
+        "primary": ".top-rated-seller",
+        "fallbacks": [
+          ".trs-badge",
+          "img[alt*=\"Top Rated\"]",
+          ".seller-badge"
+        ],
+        "description": "Top rated seller badge",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 3,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "store_name": {
+        "primary": ".str-seller-card .str-title",
+        "fallbacks": [
+          ".store-name",
+          ".str-name a",
+          "#store_name"
+        ],
+        "description": "eBay store name if applicable",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 3,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "business_seller": {
+        "primary": ".business-seller",
+        "fallbacks": [
+          "img[alt*=\"Business seller\"]",
+          ".biz-seller-badge",
+          "span:contains(\"Business seller\")"
+        ],
+        "description": "Business seller indicator",
+        "device_type": "all",
+        "category_specific": null,
+        "performance_weight": 3,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      }
+    },
+    "mobile_specific": {
+      "mobile_listing": {
+        "primary": ".sresult",
+        "fallbacks": [
+          ".mobile-listing",
+          ".m-item",
+          "div[data-view*=\"mobile\"]"
+        ],
+        "description": "Mobile listing container",
+        "device_type": "mobile",
+        "category_specific": null,
+        "performance_weight": 1,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "mobile_title": {
+        "primary": ".sresult .title",
+        "fallbacks": [
+          ".mobile-title",
+          ".m-item-title",
+          ".sresult h3"
+        ],
+        "description": "Mobile product title",
+        "device_type": "mobile",
+        "category_specific": null,
+        "performance_weight": 1,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "mobile_price": {
+        "primary": ".sresult .price",
+        "fallbacks": [
+          ".mobile-price",
+          ".m-item-price",
+          ".sresult .amt"
+        ],
+        "description": "Mobile product price",
+        "device_type": "mobile",
+        "category_specific": null,
+        "performance_weight": 1,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      },
+      "mobile_image": {
+        "primary": ".sresult img",
+        "fallbacks": [
+          ".mobile-image img",
+          ".m-item img",
+          ".sresult .img img"
+        ],
+        "description": "Mobile product image",
+        "device_type": "mobile",
+        "category_specific": null,
+        "performance_weight": 2,
+        "last_tested": null,
+        "success_rate": 0.0,
+        "total_attempts": 0,
+        "successful_extractions": 0
+      }
+    }
+  }
+}

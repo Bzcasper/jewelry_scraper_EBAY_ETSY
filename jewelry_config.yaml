@@ -1,0 +1,31 @@
+dashboard:
+  host: localhost
+  port: 8501
+  update_interval: 5
+database:
+  backup_path: backups/
+  path: jewelry_scraping.db
+images:
+  download_path: images/
+  formats:
+  - jpg
+  - png
+  - webp
+  max_size: 1920x1080
+  quality: 85
+mcp_server:
+  api_key: null
+  host: localhost
+  port: 8000
+scraping:
+  categories:
+  - rings
+  - necklaces
+  - earrings
+  - bracelets
+  - watches
+  - pendants
+  max_retries: 3
+  rate_limit: 2.0
+  timeout: 30
+  user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
