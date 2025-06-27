@@ -219,8 +219,10 @@ class SelectorManager:
         
         # Listing images
         self.selectors[SelectorType.SEARCH_RESULTS]['listing_image'] = SelectorInfo(
-            primary='.s-item__image img',
+            primary='div.vim.x-evo-atf-left-river.x-evo-atf-left-river--share > div > div.vim.x-photos > div.x-photos-min-view.filmstrip.filmstrip-x.no-filmstrip img',
             fallbacks=[
+                '#item3e34ed435f > div > div.s-item__image-section > div > a > div > img',
+                '.s-item__image img',
                 '.s-item__wrapper img',
                 'img.s-item__image',
                 '.img img',
@@ -466,8 +468,12 @@ class SelectorManager:
         
         # Main product image
         self.selectors[SelectorType.IMAGES]['main_image'] = SelectorInfo(
-            primary='#icImg',
+            primary='/html/body/div[2]/main/div[1]/div[1]/div[4]/div/div/div[1]/div[1]/div/div[1]/div[1]/div[1]/div[3]/div/img',
             fallbacks=[
+                'div.vim.x-evo-atf-left-river.x-evo-atf-left-river--share > div > div.vim.x-photos > div.x-photos-min-view.filmstrip.filmstrip-x.no-filmstrip img',
+                '/html/body/div[5]/div[4]/div[3]/div[1]/div[3]/ul/li[1]/div/div[1]/div/a/div/img',
+                '#item3e34ed435f > div > div.s-item__image-section > div > a > div > img',
+                '#icImg',
                 '#mainImgHldr img',
                 '#PicturePanel img',
                 '.img img',
@@ -479,8 +485,10 @@ class SelectorManager:
         
         # Image gallery thumbnails
         self.selectors[SelectorType.IMAGES]['gallery_thumbnails'] = SelectorInfo(
-            primary='.tdThumb img',
+            primary='div.vim.x-evo-atf-left-river.x-evo-atf-left-river--share > div > div.vim.x-photos > div.x-photos-min-view.filmstrip.filmstrip-x.no-filmstrip img',
             fallbacks=[
+                '#item3e34ed435f > div > div.s-item__image-section > div > a > div > img',
+                '.tdThumb img',
                 '#vi_main_img_fs .tdThumb img',
                 '.thumb img',
                 '.imgTbl img',

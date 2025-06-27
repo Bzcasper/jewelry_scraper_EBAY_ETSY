@@ -130,3 +130,46 @@
 2025-06-27 08:20:24,705 - ebay_jewelry_scraper_505515dd - INFO - No more listings found, stopping
 2025-06-27 08:20:24,705 - __main__ - ERROR - Error processing URL https://www.ebay.com/sch/i.html?_sacat=52544&_from=R40: 'ScrapingResult' object is not iterable
 2025-06-27 08:20:24,710 - __main__ - INFO - Scraping cycle completed: 0 listings, 0 images
+2025-06-27 08:21:00,601 - __main__ - INFO - Database initialized successfully
+2025-06-27 08:21:00,602 - __main__ - INFO - Jewelry System Orchestrator initialized
+2025-06-27 08:21:00,602 - __main__ - INFO - Starting full scraping cycle for categories: ['rings', 'necklaces', 'earrings', 'bracelets', 'watches', 'pendants']
+2025-06-27 08:21:01,399 - scrapers.ebay.ebay_selectors - INFO - Loaded selector performance cache
+2025-06-27 08:21:01,400 - core.ebay_image_processor - INFO - Initialized directory structure at images
+2025-06-27 08:21:01,400 - ebay_jewelry_scraper_2ca4d588 - INFO - Scraper initialized with session ID: 2ca4d588-caae-478e-870c-ae1507546363
+2025-06-27 08:21:01,400 - core.ebay_image_processor - INFO - Initialized directory structure at images
+2025-06-27 08:21:01,401 - data.jewelry_data_manager - INFO - Using existing database: data/jewelry_scraping.db
+2025-06-27 08:21:01,401 - data.jewelry_data_manager - INFO - Initialized JewelryDatabaseManager with database: data/jewelry_scraping.db
+2025-06-27 08:21:01,401 - __main__ - INFO - Processing category: rings
+2025-06-27 08:21:01,518 - ebay_jewelry_scraper_2ca4d588 - INFO - Crawler initialized successfully
+2025-06-27 08:21:01,518 - ebay_jewelry_scraper_2ca4d588 - INFO - Starting search results scraping: https://www.ebay.com/sch/i.html?_sacat=52546&_from=R40
+2025-06-27 08:21:03,169 - ebay_jewelry_scraper_2ca4d588 - INFO - Found 0 listing containers
+2025-06-27 08:21:03,170 - ebay_jewelry_scraper_2ca4d588 - INFO - Page 1: Found 0 listings
+2025-06-27 08:21:03,170 - ebay_jewelry_scraper_2ca4d588 - INFO - No more listings found, stopping
+2025-06-27 08:21:05,172 - __main__ - INFO - Processing category: necklaces
+2025-06-27 08:21:05,173 - ebay_jewelry_scraper_2ca4d588 - INFO - Starting search results scraping: https://www.ebay.com/sch/i.html?_sacat=52544&_from=R40
+2025-06-27 08:21:06,661 - ebay_jewelry_scraper_2ca4d588 - INFO - Found 0 listing containers
+2025-06-27 08:21:06,662 - ebay_jewelry_scraper_2ca4d588 - INFO - Page 1: Found 0 listings
+2025-06-27 08:21:06,662 - ebay_jewelry_scraper_2ca4d588 - INFO - No more listings found, stopping
+2025-06-27 08:21:08,664 - __main__ - INFO - Processing category: earrings
+2025-06-27 08:21:08,665 - ebay_jewelry_scraper_2ca4d588 - INFO - Starting search results scraping: https://www.ebay.com/sch/i.html?_sacat=52543&_from=R40
+2025-06-27 08:21:11,212 - ebay_jewelry_scraper_2ca4d588 - INFO - Found 0 listing containers
+2025-06-27 08:21:11,213 - ebay_jewelry_scraper_2ca4d588 - INFO - Page 1: Found 0 listings
+2025-06-27 08:21:11,214 - ebay_jewelry_scraper_2ca4d588 - INFO - No more listings found, stopping
+2025-06-27 08:21:13,215 - __main__ - INFO - Processing category: bracelets
+2025-06-27 08:21:13,216 - ebay_jewelry_scraper_2ca4d588 - INFO - Starting search results scraping: https://www.ebay.com/sch/i.html?_sacat=52545&_from=R40
+2025-06-27 08:21:14,773 - ebay_jewelry_scraper_2ca4d588 - INFO - Found 0 listing containers
+2025-06-27 08:21:14,774 - ebay_jewelry_scraper_2ca4d588 - INFO - Page 1: Found 0 listings
+2025-06-27 08:21:14,774 - ebay_jewelry_scraper_2ca4d588 - INFO - No more listings found, stopping
+2025-06-27 08:21:16,776 - __main__ - INFO - Processing category: watches
+2025-06-27 08:21:16,776 - ebay_jewelry_scraper_2ca4d588 - INFO - Starting search results scraping: https://www.ebay.com/sch/i.html?_sacat=14324&_from=R40
+2025-06-27 08:21:19,161 - ebay_jewelry_scraper_2ca4d588 - INFO - Found 0 listing containers
+2025-06-27 08:21:19,162 - ebay_jewelry_scraper_2ca4d588 - INFO - Page 1: Found 0 listings
+2025-06-27 08:21:19,162 - ebay_jewelry_scraper_2ca4d588 - INFO - No more listings found, stopping
+2025-06-27 08:21:21,164 - __main__ - INFO - Processing category: pendants
+2025-06-27 08:21:21,164 - ebay_jewelry_scraper_2ca4d588 - INFO - Starting search results scraping: https://www.ebay.com/sch/i.html?_sacat=52544&_from=R40
+2025-06-27 08:21:23,689 - ebay_jewelry_scraper_2ca4d588 - INFO - Found 0 listing containers
+2025-06-27 08:21:23,691 - ebay_jewelry_scraper_2ca4d588 - INFO - Page 1: Found 0 listings
+2025-06-27 08:21:23,691 - ebay_jewelry_scraper_2ca4d588 - INFO - No more listings found, stopping
+2025-06-27 08:21:25,700 - __main__ - INFO - Scraping cycle completed: 0 listings, 0 images
+2025-06-27 08:45:09,726 - __main__ - INFO - Database initialized successfully
+2025-06-27 08:45:09,726 - __main__ - INFO - Jewelry System Orchestrator initialized

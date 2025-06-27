@@ -317,7 +317,13 @@ class JewelrySystemOrchestrator:
                 for url in search_urls:
                     try:
                         # Scrape listings
-                        listings = await scraper.scrape_search_results(url)
+                        scraping_result = await scraper.scrape_search_results(url)
+                        
+                        # Extract listings from result
+                        if scraping_result.success and scraping_result.data:
+                            listings = scraping_result.data if isinstance(scraping_result.data, list) else [scraping_result.data]
+                        else:
+                            listings = []
                         
                         for listing in listings:
                             # Store listing in database
