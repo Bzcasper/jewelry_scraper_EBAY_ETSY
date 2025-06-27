@@ -32,11 +32,14 @@ from crawl4ai.chunking_strategy import RegexChunking
 
 from .ebay_selectors import SelectorManager, SelectorType, DeviceType, JewelryCategory
 
-# Import jewelry models using relative imports
-from ...models.jewelry_models import JewelryListing, JewelryImage, ScrapingSession, ScrapingStatus
+# Import jewelry models using absolute imports
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent.parent.parent))
 
-from ...core.ebay_image_processor import ImageProcessor
-from ...models.ebay_types import ScrapingMode, AntiDetectionLevel, ScrapingResult
+from models.jewelry_models import JewelryListing, JewelryImage, ScrapingSession, ScrapingStatus
+from core.ebay_image_processor import ImageProcessor
+from models.ebay_types import ScrapingMode, AntiDetectionLevel, ScrapingResult
 
 
 @dataclass
@@ -189,7 +192,7 @@ class EbayJewelryScraper:
                 verbose=True if self.config.log_level == "DEBUG" else False
             )
 
-            await self.crawler.astart()
+            # Note: Using context manager pattern, no need for astart()
             self._crawler_initialized = True
 
             self.logger.info("Crawler initialized successfully")
@@ -423,19 +426,12 @@ class EbayJewelryScraper:
         start_time = time.time()
 
         try:
-            # Configure crawl parameters
-            run_config = CrawlerRunConfig(
-                cache_mode="bypass",
-                wait_for_images=False,
-                screenshot=self.config.save_screenshots,
-                process_iframes=False,
-                remove_overlay_elements=True,
-                simulate_user=True,
-                override_navigator=True
-            )
-
-            # Execute crawl
-            result = await self.crawler.arun(url, config=run_config)
+            # Use context manager pattern for crawler
+            async with AsyncWebCrawler(
+                verbose=True if self.config.log_level == "DEBUG" else False
+            ) as crawler:
+                # Execute crawl
+                result = await crawler.arun(url)
 
             if not result.success:
                 return ScrapingResult(

@@ -29,10 +29,10 @@ from .ebay_selectors import SelectorManager, SelectorType, DeviceType, JewelryCa
 # Import from root-level jewelry models - use absolute import
 import sys
 from pathlib import Path
-# Import jewelry models using relative imports
-from ...models.jewelry_models import JewelryListing, JewelryImage, JewelrySpecification, JewelryMaterial, ListingStatus
+sys.path.append(str(Path(__file__).parent.parent.parent))
 
-from ...models.ebay_types import ScrapingResult
+from models.jewelry_models import JewelryListing, JewelryImage, JewelrySpecification, JewelryMaterial, ListingStatus
+from models.ebay_types import ScrapingResult
 
 
 @dataclass

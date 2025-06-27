@@ -1,0 +1,132 @@
+2025-06-27 08:10:47,306 - __main__ - INFO - Database initialized successfully
+2025-06-27 08:10:47,306 - __main__ - INFO - Jewelry System Orchestrator initialized
+2025-06-27 08:10:53,583 - __main__ - INFO - Database initialized successfully
+2025-06-27 08:10:53,583 - __main__ - INFO - Jewelry System Orchestrator initialized
+2025-06-27 08:10:53,583 - __main__ - INFO - Starting full scraping cycle for categories: ['rings', 'necklaces', 'earrings', 'bracelets', 'watches', 'pendants']
+2025-06-27 08:10:54,141 - __main__ - ERROR - Scraping cycle failed: attempted relative import beyond top-level package
+2025-06-27 08:17:10,103 - __main__ - INFO - Database initialized successfully
+2025-06-27 08:17:10,103 - __main__ - INFO - Jewelry System Orchestrator initialized
+2025-06-27 08:17:10,103 - __main__ - INFO - Starting full scraping cycle for categories: ['rings', 'necklaces', 'earrings', 'bracelets', 'watches', 'pendants']
+2025-06-27 08:17:10,905 - scrapers.ebay.ebay_selectors - INFO - Loaded selector performance cache
+2025-06-27 08:17:10,905 - core.ebay_image_processor - INFO - Initialized directory structure at images
+2025-06-27 08:17:10,905 - ebay_jewelry_scraper_4d890db4 - INFO - Scraper initialized with session ID: 4d890db4-c2a8-4bae-a99b-dca8cadc4e96
+2025-06-27 08:17:10,906 - core.ebay_image_processor - INFO - Initialized directory structure at images
+2025-06-27 08:17:10,906 - data.jewelry_data_manager - INFO - Using existing database: data/jewelry_scraping.db
+2025-06-27 08:17:10,906 - data.jewelry_data_manager - INFO - Initialized JewelryDatabaseManager with database: data/jewelry_scraping.db
+2025-06-27 08:17:10,906 - __main__ - INFO - Processing category: rings
+2025-06-27 08:17:10,910 - __main__ - ERROR - Scraping cycle failed: 'EBayURLBuilder' object has no attribute 'build_category_urls'
+2025-06-27 08:17:33,197 - __main__ - INFO - Database initialized successfully
+2025-06-27 08:17:33,197 - __main__ - INFO - Jewelry System Orchestrator initialized
+2025-06-27 08:17:33,197 - __main__ - INFO - Starting full scraping cycle for categories: ['rings', 'necklaces', 'earrings', 'bracelets', 'watches', 'pendants']
+2025-06-27 08:17:34,033 - scrapers.ebay.ebay_selectors - INFO - Loaded selector performance cache
+2025-06-27 08:17:34,033 - core.ebay_image_processor - INFO - Initialized directory structure at images
+2025-06-27 08:17:34,033 - ebay_jewelry_scraper_dd6158f8 - INFO - Scraper initialized with session ID: dd6158f8-c252-427b-832b-d126144930a0
+2025-06-27 08:17:34,034 - core.ebay_image_processor - INFO - Initialized directory structure at images
+2025-06-27 08:17:34,034 - data.jewelry_data_manager - INFO - Using existing database: data/jewelry_scraping.db
+2025-06-27 08:17:34,034 - data.jewelry_data_manager - INFO - Initialized JewelryDatabaseManager with database: data/jewelry_scraping.db
+2025-06-27 08:17:34,034 - __main__ - INFO - Processing category: rings
+2025-06-27 08:17:34,038 - __main__ - ERROR - Scraping cycle failed: EBayURLBuilder.build_category_url() got an unexpected keyword argument 'max_pages'
+2025-06-27 08:17:55,181 - __main__ - INFO - Database initialized successfully
+2025-06-27 08:17:55,181 - __main__ - INFO - Jewelry System Orchestrator initialized
+2025-06-27 08:17:55,181 - __main__ - INFO - Starting full scraping cycle for categories: ['rings', 'necklaces', 'earrings', 'bracelets', 'watches', 'pendants']
+2025-06-27 08:17:55,987 - scrapers.ebay.ebay_selectors - INFO - Loaded selector performance cache
+2025-06-27 08:17:55,988 - core.ebay_image_processor - INFO - Initialized directory structure at images
+2025-06-27 08:17:55,988 - ebay_jewelry_scraper_e7a0f553 - INFO - Scraper initialized with session ID: e7a0f553-86c0-45b7-b8db-d4177f2acac9
+2025-06-27 08:17:55,988 - core.ebay_image_processor - INFO - Initialized directory structure at images
+2025-06-27 08:17:55,988 - data.jewelry_data_manager - INFO - Using existing database: data/jewelry_scraping.db
+2025-06-27 08:17:55,988 - data.jewelry_data_manager - INFO - Initialized JewelryDatabaseManager with database: data/jewelry_scraping.db
+2025-06-27 08:17:55,988 - __main__ - INFO - Processing category: rings
+2025-06-27 08:17:55,993 - __main__ - ERROR - Scraping cycle failed: 'str' object has no attribute 'value'
+2025-06-27 08:18:31,389 - __main__ - INFO - Database initialized successfully
+2025-06-27 08:18:31,389 - __main__ - INFO - Jewelry System Orchestrator initialized
+2025-06-27 08:18:31,389 - __main__ - INFO - Starting full scraping cycle for categories: ['rings', 'necklaces', 'earrings', 'bracelets', 'watches', 'pendants']
+2025-06-27 08:18:32,183 - scrapers.ebay.ebay_selectors - INFO - Loaded selector performance cache
+2025-06-27 08:18:32,183 - core.ebay_image_processor - INFO - Initialized directory structure at images
+2025-06-27 08:18:32,183 - ebay_jewelry_scraper_0698666a - INFO - Scraper initialized with session ID: 0698666a-2224-4af6-b5f5-c3441daf98f4
+2025-06-27 08:18:32,184 - core.ebay_image_processor - INFO - Initialized directory structure at images
+2025-06-27 08:18:32,184 - data.jewelry_data_manager - INFO - Using existing database: data/jewelry_scraping.db
+2025-06-27 08:18:32,184 - data.jewelry_data_manager - INFO - Initialized JewelryDatabaseManager with database: data/jewelry_scraping.db
+2025-06-27 08:18:32,184 - __main__ - INFO - Processing category: rings
+2025-06-27 08:18:32,285 - ebay_jewelry_scraper_0698666a - ERROR - Failed to initialize crawler: 'AsyncWebCrawler' object has no attribute 'astart'
+2025-06-27 08:18:32,285 - ebay_jewelry_scraper_0698666a - ERROR - Search results scraping failed: 'AsyncWebCrawler' object has no attribute 'astart'
+2025-06-27 08:18:32,285 - __main__ - ERROR - Error processing URL https://www.ebay.com/sch/i.html?_sacat=52546&_from=R40: 'ScrapingResult' object is not iterable
+2025-06-27 08:18:32,285 - __main__ - INFO - Processing category: necklaces
+2025-06-27 08:18:32,335 - ebay_jewelry_scraper_0698666a - ERROR - Failed to initialize crawler: 'AsyncWebCrawler' object has no attribute 'astart'
+2025-06-27 08:18:32,335 - ebay_jewelry_scraper_0698666a - ERROR - Search results scraping failed: 'AsyncWebCrawler' object has no attribute 'astart'
+2025-06-27 08:18:32,335 - __main__ - ERROR - Error processing URL https://www.ebay.com/sch/i.html?_sacat=52544&_from=R40: 'ScrapingResult' object is not iterable
+2025-06-27 08:18:32,335 - __main__ - INFO - Processing category: earrings
+2025-06-27 08:18:32,384 - ebay_jewelry_scraper_0698666a - ERROR - Failed to initialize crawler: 'AsyncWebCrawler' object has no attribute 'astart'
+2025-06-27 08:18:32,384 - ebay_jewelry_scraper_0698666a - ERROR - Search results scraping failed: 'AsyncWebCrawler' object has no attribute 'astart'
+2025-06-27 08:18:32,384 - __main__ - ERROR - Error processing URL https://www.ebay.com/sch/i.html?_sacat=52543&_from=R40: 'ScrapingResult' object is not iterable
+2025-06-27 08:18:32,384 - __main__ - INFO - Processing category: bracelets
+2025-06-27 08:18:32,432 - ebay_jewelry_scraper_0698666a - ERROR - Failed to initialize crawler: 'AsyncWebCrawler' object has no attribute 'astart'
+2025-06-27 08:18:32,432 - ebay_jewelry_scraper_0698666a - ERROR - Search results scraping failed: 'AsyncWebCrawler' object has no attribute 'astart'
+2025-06-27 08:18:32,432 - __main__ - ERROR - Error processing URL https://www.ebay.com/sch/i.html?_sacat=52545&_from=R40: 'ScrapingResult' object is not iterable
+2025-06-27 08:18:32,432 - __main__ - INFO - Processing category: watches
+2025-06-27 08:18:32,485 - ebay_jewelry_scraper_0698666a - ERROR - Failed to initialize crawler: 'AsyncWebCrawler' object has no attribute 'astart'
+2025-06-27 08:18:32,485 - ebay_jewelry_scraper_0698666a - ERROR - Search results scraping failed: 'AsyncWebCrawler' object has no attribute 'astart'
+2025-06-27 08:18:32,485 - __main__ - ERROR - Error processing URL https://www.ebay.com/sch/i.html?_sacat=14324&_from=R40: 'ScrapingResult' object is not iterable
+2025-06-27 08:18:32,485 - __main__ - INFO - Processing category: pendants
+2025-06-27 08:18:32,539 - ebay_jewelry_scraper_0698666a - ERROR - Failed to initialize crawler: 'AsyncWebCrawler' object has no attribute 'astart'
+2025-06-27 08:18:32,539 - ebay_jewelry_scraper_0698666a - ERROR - Search results scraping failed: 'AsyncWebCrawler' object has no attribute 'astart'
+2025-06-27 08:18:32,540 - __main__ - ERROR - Error processing URL https://www.ebay.com/sch/i.html?_sacat=52544&_from=R40: 'ScrapingResult' object is not iterable
+2025-06-27 08:18:32,544 - __main__ - INFO - Scraping cycle completed: 0 listings, 0 images
+2025-06-27 08:19:56,255 - __main__ - INFO - Database initialized successfully
+2025-06-27 08:19:56,255 - __main__ - INFO - Jewelry System Orchestrator initialized
+2025-06-27 08:19:56,256 - __main__ - INFO - Starting full scraping cycle for categories: ['rings', 'necklaces', 'earrings', 'bracelets', 'watches', 'pendants']
+2025-06-27 08:19:57,070 - scrapers.ebay.ebay_selectors - INFO - Loaded selector performance cache
+2025-06-27 08:19:57,070 - core.ebay_image_processor - INFO - Initialized directory structure at images
+2025-06-27 08:19:57,071 - ebay_jewelry_scraper_2792e828 - INFO - Scraper initialized with session ID: 2792e828-346e-4cdb-a075-0f54c604fe9f
+2025-06-27 08:19:57,071 - core.ebay_image_processor - INFO - Initialized directory structure at images
+2025-06-27 08:19:57,071 - data.jewelry_data_manager - INFO - Using existing database: data/jewelry_scraping.db
+2025-06-27 08:19:57,071 - data.jewelry_data_manager - INFO - Initialized JewelryDatabaseManager with database: data/jewelry_scraping.db
+2025-06-27 08:19:57,071 - __main__ - INFO - Processing category: rings
+2025-06-27 08:19:57,179 - ebay_jewelry_scraper_2792e828 - INFO - Crawler initialized successfully
+2025-06-27 08:19:57,179 - ebay_jewelry_scraper_2792e828 - INFO - Starting search results scraping: https://www.ebay.com/sch/i.html?_sacat=52546&_from=R40
+2025-06-27 08:20:05,503 - __main__ - INFO - Database initialized successfully
+2025-06-27 08:20:05,503 - __main__ - INFO - Jewelry System Orchestrator initialized
+2025-06-27 08:20:05,504 - __main__ - INFO - Starting full scraping cycle for categories: ['rings', 'necklaces', 'earrings', 'bracelets', 'watches', 'pendants']
+2025-06-27 08:20:06,309 - scrapers.ebay.ebay_selectors - INFO - Loaded selector performance cache
+2025-06-27 08:20:06,310 - core.ebay_image_processor - INFO - Initialized directory structure at images
+2025-06-27 08:20:06,310 - ebay_jewelry_scraper_505515dd - INFO - Scraper initialized with session ID: 505515dd-3bfe-43fc-bd20-7cdfed69bef4
+2025-06-27 08:20:06,310 - core.ebay_image_processor - INFO - Initialized directory structure at images
+2025-06-27 08:20:06,311 - data.jewelry_data_manager - INFO - Using existing database: data/jewelry_scraping.db
+2025-06-27 08:20:06,311 - data.jewelry_data_manager - INFO - Initialized JewelryDatabaseManager with database: data/jewelry_scraping.db
+2025-06-27 08:20:06,311 - __main__ - INFO - Processing category: rings
+2025-06-27 08:20:06,409 - ebay_jewelry_scraper_505515dd - INFO - Crawler initialized successfully
+2025-06-27 08:20:06,409 - ebay_jewelry_scraper_505515dd - INFO - Starting search results scraping: https://www.ebay.com/sch/i.html?_sacat=52546&_from=R40
+2025-06-27 08:20:08,757 - ebay_jewelry_scraper_505515dd - INFO - Found 0 listing containers
+2025-06-27 08:20:08,758 - ebay_jewelry_scraper_505515dd - INFO - Page 1: Found 0 listings
+2025-06-27 08:20:08,758 - ebay_jewelry_scraper_505515dd - INFO - No more listings found, stopping
+2025-06-27 08:20:08,758 - __main__ - ERROR - Error processing URL https://www.ebay.com/sch/i.html?_sacat=52546&_from=R40: 'ScrapingResult' object is not iterable
+2025-06-27 08:20:08,758 - __main__ - INFO - Processing category: necklaces
+2025-06-27 08:20:08,758 - ebay_jewelry_scraper_505515dd - INFO - Starting search results scraping: https://www.ebay.com/sch/i.html?_sacat=52544&_from=R40
+2025-06-27 08:20:11,918 - ebay_jewelry_scraper_505515dd - INFO - Found 0 listing containers
+2025-06-27 08:20:11,918 - ebay_jewelry_scraper_505515dd - INFO - Page 1: Found 0 listings
+2025-06-27 08:20:11,918 - ebay_jewelry_scraper_505515dd - INFO - No more listings found, stopping
+2025-06-27 08:20:11,918 - __main__ - ERROR - Error processing URL https://www.ebay.com/sch/i.html?_sacat=52544&_from=R40: 'ScrapingResult' object is not iterable
+2025-06-27 08:20:11,919 - __main__ - INFO - Processing category: earrings
+2025-06-27 08:20:11,919 - ebay_jewelry_scraper_505515dd - INFO - Starting search results scraping: https://www.ebay.com/sch/i.html?_sacat=52543&_from=R40
+2025-06-27 08:20:15,781 - ebay_jewelry_scraper_505515dd - INFO - Found 0 listing containers
+2025-06-27 08:20:15,782 - ebay_jewelry_scraper_505515dd - INFO - Page 1: Found 0 listings
+2025-06-27 08:20:15,782 - ebay_jewelry_scraper_505515dd - INFO - No more listings found, stopping
+2025-06-27 08:20:15,783 - __main__ - ERROR - Error processing URL https://www.ebay.com/sch/i.html?_sacat=52543&_from=R40: 'ScrapingResult' object is not iterable
+2025-06-27 08:20:15,783 - __main__ - INFO - Processing category: bracelets
+2025-06-27 08:20:15,783 - ebay_jewelry_scraper_505515dd - INFO - Starting search results scraping: https://www.ebay.com/sch/i.html?_sacat=52545&_from=R40
+2025-06-27 08:20:17,967 - ebay_jewelry_scraper_505515dd - INFO - Found 0 listing containers
+2025-06-27 08:20:17,968 - ebay_jewelry_scraper_505515dd - INFO - Page 1: Found 0 listings
+2025-06-27 08:20:17,968 - ebay_jewelry_scraper_505515dd - INFO - No more listings found, stopping
+2025-06-27 08:20:17,968 - __main__ - ERROR - Error processing URL https://www.ebay.com/sch/i.html?_sacat=52545&_from=R40: 'ScrapingResult' object is not iterable
+2025-06-27 08:20:17,968 - __main__ - INFO - Processing category: watches
+2025-06-27 08:20:17,968 - ebay_jewelry_scraper_505515dd - INFO - Starting search results scraping: https://www.ebay.com/sch/i.html?_sacat=14324&_from=R40
+2025-06-27 08:20:21,215 - ebay_jewelry_scraper_505515dd - INFO - Found 0 listing containers
+2025-06-27 08:20:21,216 - ebay_jewelry_scraper_505515dd - INFO - Page 1: Found 0 listings
+2025-06-27 08:20:21,216 - ebay_jewelry_scraper_505515dd - INFO - No more listings found, stopping
+2025-06-27 08:20:21,216 - __main__ - ERROR - Error processing URL https://www.ebay.com/sch/i.html?_sacat=14324&_from=R40: 'ScrapingResult' object is not iterable
+2025-06-27 08:20:21,216 - __main__ - INFO - Processing category: pendants
+2025-06-27 08:20:21,216 - ebay_jewelry_scraper_505515dd - INFO - Starting search results scraping: https://www.ebay.com/sch/i.html?_sacat=52544&_from=R40
+2025-06-27 08:20:24,704 - ebay_jewelry_scraper_505515dd - INFO - Found 0 listing containers
+2025-06-27 08:20:24,705 - ebay_jewelry_scraper_505515dd - INFO - Page 1: Found 0 listings
+2025-06-27 08:20:24,705 - ebay_jewelry_scraper_505515dd - INFO - No more listings found, stopping
+2025-06-27 08:20:24,705 - __main__ - ERROR - Error processing URL https://www.ebay.com/sch/i.html?_sacat=52544&_from=R40: 'ScrapingResult' object is not iterable
+2025-06-27 08:20:24,710 - __main__ - INFO - Scraping cycle completed: 0 listings, 0 images

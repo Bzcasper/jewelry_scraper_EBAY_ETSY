@@ -40,7 +40,11 @@ from .scraper_engine import (
     ScrapingConfig
 )
 
-from ...models.ebay_types import (
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent.parent.parent))
+
+from models.ebay_types import (
     ScrapingResult,
     ScrapingMode,
     AntiDetectionLevel
@@ -59,7 +63,7 @@ from .ebay_selectors import (
     JewelryCategory
 )
 
-from ...core.browser_config import (
+from core.browser_config import (
     AdvancedBrowserConfigurator,
     BrowserFingerprint,
     DeviceProfile,
@@ -75,7 +79,7 @@ from ..ebay_url_builder import (
     ItemCondition
 )
 
-from ...utils.rate_limiter import (
+from utils.rate_limiter import (
     AdvancedRateLimiter,
     RateLimitConfig,
     RetryConfig,
@@ -84,7 +88,7 @@ from ...utils.rate_limiter import (
     create_ebay_rate_limiter
 )
 
-from ...utils.ebay_error_handler import (
+from utils.ebay_error_handler import (
     AdvancedErrorHandler,
     ErrorClassification,
     ErrorContext,
@@ -93,7 +97,7 @@ from ...utils.ebay_error_handler import (
     RecoveryStrategy
 )
 
-from ...core.ebay_image_processor import (
+from core.ebay_image_processor import (
     ImageProcessor,
     ImageMetadata
 )

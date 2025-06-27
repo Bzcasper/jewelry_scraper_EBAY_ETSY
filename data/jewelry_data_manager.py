@@ -21,7 +21,11 @@ from dataclasses import dataclass
 import pandas as pd
 
 # Import the jewelry models
-from ..models.jewelry_models import (
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent.parent))
+
+from models.jewelry_models import (
     JewelryListing, JewelryImage, JewelrySpecification, ScrapingSession,
     JewelryCategory, JewelryMaterial, ListingStatus, ScrapingStatus, ImageType,
     JEWELRY_SCHEMA_SQL, JEWELRY_INDEXES_SQL

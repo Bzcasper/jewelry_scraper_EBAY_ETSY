@@ -51,18 +51,18 @@ class StatusResponse(BaseModel):
 # Global job tracking
 active_jobs = {}
 
-@app.get("/", response_model=Dict[str, str])
+@app.get("/")
 async def root():
     """Root endpoint"""
     return {
         "service": "Jewelry Scraper API",
         "version": "1.0.0",
         "status": "running",
-        "endpoints": {
-            "health": "/health",
-            "scrape": "/scrape",
-            "status": "/status"
-        }
+        "endpoints": [
+            {"path": "/health", "method": "GET", "description": "Health check"},
+            {"path": "/scrape", "method": "POST", "description": "Trigger scraping"},
+            {"path": "/status", "method": "GET", "description": "System status"}
+        ]
     }
 
 @app.get("/health")

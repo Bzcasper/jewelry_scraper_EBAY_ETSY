@@ -34,7 +34,11 @@ from .export_manager import ExportManager, ExportFormat
 from .analytics_engine import AnalyticsEngine, ReportGenerator
 from .backup_manager import BackupManager, BackupStrategy
 from .validation_engine import ValidationEngine, IntegrityChecker
-from ..models.jewelry_models import *
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent.parent))
+
+from models.jewelry_models import *
 from .schema import JEWELRY_SCHEMA_SQL, JEWELRY_INDEXES_SQL, JEWELRY_VIEWS_SQL
 
 __version__ = "1.0.0"

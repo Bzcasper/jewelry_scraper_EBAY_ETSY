@@ -1,31 +1,76 @@
+
+# Jewelry Scraping Configuration
+scraping:
+  categories:
+    - rings
+    - necklaces
+    - earrings
+    - bracelets
+    - watches
+    - pendants
+  rate_limit: 2.0
+  max_retries: 3
+  timeout: 30
+  user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+  max_pages: 5
+  min_price: 10
+  max_price: 1000
+
+database:
+  path: data/jewelry_scraping.db
+  backup_path: backups/
+  max_connections: 10
+
+images:
+  download_path: storage/images/
+  max_size: 1920x1080
+  quality: 85
+  formats:
+    - jpg
+    - png
+    - webp
+  enable_processing: true
+  enable_deduplication: true
+
+mcp_server:
+  host: localhost
+  port: 8000
+  api_key: null
+  max_workers: 4
+
+api_server:
+  host: localhost
+  port: 8001
+  cors_origins:
+    - "http://localhost:3000"
+    - "http://localhost:8501"
+
 dashboard:
   host: localhost
   port: 8501
   update_interval: 5
-database:
-  backup_path: backups/
-  path: jewelry_scraping.db
-images:
-  download_path: images/
-  formats:
-  - jpg
-  - png
-  - webp
-  max_size: 1920x1080
-  quality: 85
-mcp_server:
-  api_key: null
-  host: localhost
-  port: 8000
-scraping:
-  categories:
-  - rings
-  - necklaces
-  - earrings
-  - bracelets
-  - watches
-  - pendants
-  max_retries: 3
-  rate_limit: 2.0
-  timeout: 30
-  user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+  theme: dark
+
+scheduler:
+  enabled: true
+  interval_hours: 6
+  max_concurrent_jobs: 2
+  retry_failed_jobs: true
+
+storage:
+  local_enabled: true
+  minio_enabled: false
+  minio_endpoint: localhost:9000
+  minio_bucket: jewelry-images
+  
+vector_store:
+  enabled: false
+  provider: chroma
+  collection_name: jewelry-listings
+
+logging:
+  level: INFO
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: logs/jewelry_system.log
+  max_size_mb: 100
+  backup_count: 5
